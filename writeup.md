@@ -30,7 +30,16 @@ You're reading it! Below I describe how I addressed each rubric point and where 
 planning_utils.py includes:
 1- create_grid: Returns a grid representation of a 2D configuration space based on given obstacle data, drone altitude and safety distance
    arguments.
-2- Action: An action is represented by a 3 element tuple.The first 2 values are the delta of the action relative to the current grid position. The third and final value is the cost of performing the action.
+   
+2- Action: An action is represented by a 3 element tuple.The first 2 values are the delta of the action relative to the current grid position. The third and final value is the cost of performing the action. there are 8 possible motions north, south, east, west and 4 diagonal motions.
+
+
+3- valid_actions: Returns a list of valid actions given a grid and current node.
+
+
+4- prune_path: this function removes the waypoints that are colinear to reduce the waypoints to the target.
+
+5-a_star: Perform a search using A* or other search algorithm.
 
 And here's a lovely image of my results (ok this image has nothing to do with it, but it's a nice example of how to include images in your writeup!)
 ![Top Down View](./misc/high_up.png)
