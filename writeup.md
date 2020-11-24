@@ -41,16 +41,6 @@ planning_utils.py includes:
 
 5-a_star: Perform a search using A* or other search algorithm.
 
-And here's a lovely image of my results (ok this image has nothing to do with it, but it's a nice example of how to include images in your writeup!)
-![Top Down View](./misc/high_up.png)
-
-Here's | A | Snappy | Table
---- | --- | --- | ---
-1 | `highlight` | **bold** | 7.41
-2 | a | b | c
-3 | *italic* | text | 403
-4 | 2 | 3 | abcd
-
 ### Implementing Your Path Planning Algorithm
 
 #### 1. Set your global home position
