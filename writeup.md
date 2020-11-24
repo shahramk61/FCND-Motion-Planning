@@ -27,7 +27,11 @@ You're reading it! Below I describe how I addressed each rubric point and where 
 ### Explain the Starter Code
 
 #### 1. Explain the functionality of what's provided in `motion_planning.py` and `planning_utils.py`
+The difference between current project and backyard_flyer is that in backyard_flyer the path was manually added to the waypoint and drone was following the predetermined path.
+in motion_planning the start and the goal location is defined and the drone discretized the map and uses the A* method to find a set of waypoint to go from start to goal. since grid base produces a lot of way point path pruning is used which uses a colinearity to remove extra waypoints. 
+
 planning_utils.py includes:
+
 1- create_grid: Returns a grid representation of a 2D configuration space based on given obstacle data, drone altitude and safety distance
    arguments.
    
