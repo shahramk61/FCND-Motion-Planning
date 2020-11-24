@@ -27,7 +27,10 @@ You're reading it! Below I describe how I addressed each rubric point and where 
 ### Explain the Starter Code
 
 #### 1. Explain the functionality of what's provided in `motion_planning.py` and `planning_utils.py`
-These scripts contain a basic planning implementation that includes...
+planning_utils.py includes:
+1- create_grid: Returns a grid representation of a 2D configuration space based on given obstacle data, drone altitude and safety distance
+   arguments.
+2- Action: An action is represented by a 3 element tuple.The first 2 values are the delta of the action relative to the current grid position. The third and final value is the cost of performing the action.
 
 And here's a lovely image of my results (ok this image has nothing to do with it, but it's a nice example of how to include images in your writeup!)
 ![Top Down View](./misc/high_up.png)
